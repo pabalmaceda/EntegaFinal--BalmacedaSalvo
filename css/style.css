@@ -61,7 +61,11 @@ main{
     gap: 20px;
     padding: 20px;
 }
-
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .datos, .features {
     background-color: #fff;
     padding: 20px;
