@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-
+/* INICIO DE HEADER - NAV */
 header {
     background-color: #333;
     color: #fff;
@@ -49,6 +49,7 @@ nav a {
     color: #fff;
 }
 
+/* INICIO DE MAIN */
 main{
     min-height: 90vh;
 }
@@ -114,6 +115,13 @@ main{
     margin-top: 70px;
 }
 
+.wsap{
+    position: fixed;
+    right: 25px;
+    bottom: 75px;
+}
+
+/* INICIO DE FOOTER */
 footer {
     background-color: #333;
     color: #fff;
@@ -122,12 +130,8 @@ footer {
     width: auto;
 }
 
-.wsap{
-    position: fixed;
-    right: 25px;
-    bottom: 75px;
-}
 
+/* MEDIA QUERY */
 @media (max-width: 854px){
     .info{
         grid-template-columns: 1fr;
