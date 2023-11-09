@@ -1,0 +1,14 @@
+@mixin link-blanco{
+    color: white;
+      text-decoration: none;
+}
+
+@mixin inicializar{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex-align-center{
+    display: flex;
+    align-items: center;
+}

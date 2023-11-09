@@ -1,0 +1,23 @@
+* {
+    @include inicializar;
+}
+
+body {
+    background: $fondo;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+    main {
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        }
+
+    .wsap {
+        position: fixed;
+        right: 25px;
+        bottom: 75px;
+    }
+}

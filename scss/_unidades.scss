@@ -1,0 +1,31 @@
+.unidades{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 1em;
+  justify-content: center;
+}
+
+.unidades img{
+  height: 70%;
+}
+
+.contenedorUnidad:hover{
+  height: 27em;
+  width: 23em;
+}
+
+.contenedorUnidad{
+  background-color: #fff7ef;
+  display: flex;
+  text-align: center;
+  width: 20em;
+  height: 25em;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5%;
+  margin: 10px;
+  padding: 1em;
+  transition: all 1s;
+}
+  
