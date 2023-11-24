@@ -1,11 +1,22 @@
-.galeria {
-  @include flex-align-center;
-  flex-direction: column;
-  margin-bottom: 1em;
-  
-    img {
-      width: 80%;
-      height: 100%;
-    }
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  width: 80%;
+}
+
+.carousel-item{
+  img{
+    height: 100vh;
   }
-  
+}
+.carousel-caption p { 
+  margin-bottom: 0;
+  font-size: 2em;
+  background-color: rgb(0,0,0,0.7)
+}
+

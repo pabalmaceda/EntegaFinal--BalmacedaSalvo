@@ -15,10 +15,80 @@ body main {
   min-height: 100vh;
   height: 100%;
 }
+body main .contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .contenedor .banner {
+  margin-top: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  min-width: 100vw;
+  color: rgb(255, 255, 255);
+  background-image: url(../img/banners/banner-playa.jpg);
+  background-size: cover;
+}
 body .wsap {
   position: fixed;
   right: 25px;
   bottom: 75px;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  text-align: center;
+  width: auto;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservaForm {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  width: 80%;
+}
+
+.carousel-item img {
+  height: 100vh;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 header {
@@ -58,46 +128,6 @@ nav a {
   text-decoration: none;
 }
 
-.contacto {
-  display: flex;
-  justify-content: center;
-  gap: 10em;
-  text-align: center;
-  width: auto;
-  align-items: center;
-  margin-top: 20vh;
-}
-
-features {
-  display: flex;
-  flex-direction: column;
-}
-
-.reservaForm {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  width: auto;
-}
-
-.galeria {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 1em;
-}
-.galeria img {
-  width: 80%;
-  height: 100%;
-}
-
 .unidades {
   display: flex;
   flex-wrap: wrap;
@@ -135,6 +165,32 @@ footer {
     flex-direction: column;
     margin-top: 5px;
     gap: 5em;
+  }
+}
+@media (min-width: 900px) {
+  .column-container {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .carousel-container {
+    display: none;
+  }
+  .column-container {
+    display: block;
+    width: 100%;
+  }
+  .column-container img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .column-container p {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5em;
   }
 }
 

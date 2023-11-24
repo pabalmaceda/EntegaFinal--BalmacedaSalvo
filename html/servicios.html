@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nuestros servicios te esperan para que descanses, con nosotros en Hotel California">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Hotel California - Servicios</title>
+        <title>Hotel California - Servicios</title>
 </head>
 
 <body>
@@ -25,21 +26,55 @@
     </nav>
 
     <main>
-        <section class="galeria">
-            <h2>Gimnasio</h2>
-            <img src="../img/servicios/gimnasio.jpg" alt="imagen de gimnasio">
-            <h2>Piscina</h2>
-            <img src="../img/servicios/piscina.jpg" alt="imagen de piscina">
-            <h2>Sauna</h2>
-            <img src="../img/servicios/sauna.jpg" alt="imagen de sauna">
-        </section>
+        <section class="carousel-container">
+            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/servicios/gimnasio.jpg" class="d-block w-100" alt="Imagen de gimnasio completo">
+                    <div class="carousel-caption">
+                      <p>GIMNASIO COMPLETO</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/servicios/piscina.jpg" class="d-block w-100" alt="Imagen de piscina cubierta">
+                    <div class="carousel-caption">
+                      <p>PISCINA CUBIERTA</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/servicios/sauna.jpg" class="d-block w-100" alt="Imagen de sauna seco">
+                    <div class="carousel-caption">
+                      <p>SAUNA SECO</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Siguiente</span>
+                </a>
+            </section>
+
+
+            <section class="column-container">
+                <p>Gimnasio completo</p>
+                <img src="../img/servicios/gimnasio.jpg" class="d-block w-100" alt="Imagen de gimnasio completo">
+                <p>Piscina Cubierta</p>
+                <img src="../img/servicios/piscina.jpg" class="d-block w-100" alt="Imagen de piscina cubierta">
+                <p>Sauna Seco</p>
+                <img src="../img/servicios/sauna.jpg" class="d-block w-100" alt="Imagen de sauna seco">
+            </section>
     </main>
 
     <footer class="footer">
         <section class="quienesSomos">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci est blanditiis optio soluta sint, ea
-                sequi illo? Assumenda, odio repellat!</p>
-
+          <section class="quienesSomos">
+            <p>Hotel California es una cadena de hotelería con alquileres de habitaciones por día. No somos Apart, Apart-Hotel, o departamentos con servicios.</p>
+            <p>Todos los derechos reservados</p>
+        </section>
         </section>
         <section class="redes">
             <a href=""><img src="../img/redes/face.png" alt="logo Facebook"></a>
@@ -48,5 +83,9 @@
         </section>
     </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </html>

@@ -1,8 +1,39 @@
-@media (max-width: 792px){
-    .contacto{
+@media (max-width: 792px) {
+    .contacto {
         display: flex;
         flex-direction: column;
         margin-top: 5px;
         gap: 5em
     }
+}
+
+@media (min-width:900px)
+{
+    .column-container{
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .carousel-container {
+        display: none;
+
+    }
+
+    .column-container {
+        display: block;
+        width: 100%;
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        p{
+            color:rgb(255, 255, 255);
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+
+    h1{
+        font-size: 1.5em;    }
+
 }
